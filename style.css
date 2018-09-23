@@ -1,0 +1,159 @@
+.center {
+    text-align: center;
+}
+
+.score.center {
+    padding-top: 57px;
+}
+
+body.body {
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+
+html {
+    background: #e6a378;
+}
+
+span#play {
+    font-size: 20px;
+    font-family: cursive;
+    color: green;
+    font-weight: bold;
+    boder: underline;
+    padding-bottom: 1px;
+    pointer-events: auto;
+    cursor: pointer;
+    margin: auto;
+}
+
+.right {
+    width: 189px;
+    float: left;
+}
+
+.left {
+    float: left;
+    width: 537px;
+    position: relative;
+    left: 119px;
+}
+
+body.body {
+    background: #e6a378;
+       -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+.Title {
+    font-size: 26px;
+    font-family: cursive;
+}
+
+.hole img {
+    position: relative;
+    top: -37px;
+    left: 28px;
+}
+
+span#end {
+    font-size: 20px;
+    font-family: cursive;
+    color: #ce0b0b;
+    font-weight: bold;
+}
+
+span#play {
+    font-size: 20px;
+    font-family: cursive;
+    color: green;
+    font-weight: bold;
+}
+
+
+.score h4 {
+    font-size: 20px;
+    margin-top: -22px;
+    margin-bottom: 46px;
+    font-family: cursive;
+}
+
+
+
+.hole {
+    width: 177px;
+    height: 133px;
+    float: left;
+    background-image: url(./image/hole.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.wrap {
+    width: 727px;
+    background: #e6a378;
+    height: 266px;
+    margin: auto;
+}
+
+html {
+    background-color: #e6a378!important;
+}
+
+
+span#scoreUP {
+    color: #a50909;
+    font-size: 24px;
+    /* padding-top: 6px; */
+    position: relative;
+    top: 3px;
+    font-weight: bold;
+}
+
+div#playagain {
+    display: inline-block;
+    width: 727px;
+}
+
+
+.right {
+    width: 189px;
+    float: left;
+    text-align: right;
+    background: #e6a378;
+    padding-top: 55px;
+}
+
+h3 {
+    font-size: 22px!important;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.right a {
+    font-family: cursive;
+    font-weight: bold;
+    color: #80000b;
+}
+
+div#playagain img {
+    width: 110px;
+}
+
+.mute {
+    position: relative;
+    top: 121px;
+    font-size: 23px;
+    color: #9e0e0e;
+    width: 16px;
+}
+
+.right h3 {
+    color: black;
+    font-weight: bold;
+}

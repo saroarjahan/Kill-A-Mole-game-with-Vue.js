@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript training</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body class="body">
+
+ <div id="app">
+   
+      <div class="Title center"><h2 class="title">Kill A Rat</h2></div>
+
+      <div class="wrap" >
+
+             <div class="score center"> <h4> Your score : <span id="scoreUP">{{point}}</span></h4></div>
+
+             <div class="mute" tile="Baackgorund Sound On Off">
+                  <p  @click="soundOnOff">
+                    <i v-show="disableSoundIcon" class="fas fa-volume-up"></i>
+                    <i v-show="enableSoundIcon" class="fas fa-volume-off"></i>
+                  </p>
+             </div>
+
+             
+             <div class="left" >
+                <span class="up" v-for="number in holeNumber">
+                    <span  class="hole"> <img  @click="scoreUp" v-show="holeSelect==number"  :src="ratImage"> </span>
+                </span>
+             </div>
+
+
+             <div class="right"> <h3>Mode</H3>
+              <a v-for="mode in mode" href="#" @mouseover="mouseHoverSound" @click="speed(mode.speed)"><p>{{mode.type}}</p></a>
+             </div>
+
+
+             <div class="center"  id="playagain"> 
+                <span v-show="playButton"  @mouseover="mouseHoverSound" @click="play"><img src="./image/playnow.png"></span>
+                <span v-show="playAgainButton"  @mouseover="mouseHoverSound" @click="play"><img src="./image/play.png"></span>
+             </div>
+           
+      </div>
+ </div>
+
+ <script src="app.js"></script>
+
+</body>
+</html>
